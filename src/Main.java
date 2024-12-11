@@ -1,25 +1,53 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 
         int[] arr = new int[]{1, 2, 3};
         double[] doubleArr = {1.57, 7.654, 9.986};
-        boolean[] booleans = {true, false};
+        int[] arr1 = {1, 2, 3, 6};
 
-        System.out.print(arr[0] + ", " + arr[1] + ", " + arr[2]);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            if (i != arr.length - 1) {
+                System.out.print(", ");
+            }
+        }
         System.out.println();
-        System.out.print(doubleArr[0] + ", " + doubleArr[1] + ", " + doubleArr[2]);
+        for (int i = 0; i < doubleArr.length; i++) {
+            System.out.print(doubleArr[i]);
+            if (i != doubleArr.length - 1) {
+                System.out.print(", ");
+            }
+        }
         System.out.println();
-        System.out.print(booleans[0] + ", " + booleans[1]);
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i]);
+            if (i != arr1.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = doubleArr.length - 1; i >= 0; i--) {
+            System.out.print(doubleArr[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = arr1.length - 1; i >= 0; i--) {
+            System.out.print(arr1[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
         System.out.println();
 
-        System.out.print(arr[2] + ", " + arr[1] + ", " + arr[0]);
-        System.out.println();
-        System.out.print(doubleArr[2] + ", " + doubleArr[1] + ", " + doubleArr[0]);
-        System.out.println();
-        System.out.print(booleans[1] + ", " + booleans[0]);
-        System.out.println();
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 != 0) {
